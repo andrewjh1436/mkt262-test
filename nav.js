@@ -1,113 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+document.addEventListener("DOMContentLoaded", function () {
+  const nav = document.createElement("nav");
 
-  <title>About Me</title>
+  nav.innerHTML = `
+    <div class="nav-container">
+      <a href="index.html">About Me</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="personal.html">Personal</a>
+    </div>
+  `;
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* NAVIGATION */
-    nav {
-      width: 100%;
-      background-color: #222;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .nav-container {
-      display: flex;
-      align-items: center;
-      gap: 35px;
-      padding: 18px 40px;
-    }
-
-    .nav-container a {
-      color: white;
-      text-decoration: none;
-      font-size: 17px;
-      font-weight: bold;
-    }
-
-    .nav-container a:hover {
-      color: #bbbbbb;
-    }
-
-    /* PAGE CONTENT */
-    .container {
-      width: 80%;
-      max-width: 800px;
-      margin: 60px auto;
-      background-color: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      color: #555;
-      font-weight: normal;
-      margin-bottom: 30px;
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-      color: #333;
-    }
-
-    .highlight {
-      font-weight: bold;
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="container">
-
-    <h1>Hello, I'm Andrew!</h1>
-
-    <h2>Welcome to my website.</h2>
-
-    <p>
-      My name is <span class="highlight">Andrew</span>, and I am a student
-      interested in business, marketing, technology, and learning new things.
-    </p>
-
-    <p>
-      I enjoy working on different projects, developing new skills, and
-      challenging myself both academically and personally.
-    </p>
-
-    <p>
-      Outside of school, I enjoy gaming, sports, and spending time with
-      friends. I'm always interested in improving my skills and exploring
-      new opportunities.
-    </p>
-
-    <p>
-      Thanks for visiting my page!
-    </p>
-
-  </div>
+  document.body.prepend(nav);
+});
 
   <script src="nav.js"></script>
 
