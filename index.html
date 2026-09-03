@@ -2,81 +2,207 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>About Me</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Andrew | About Me</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background-color: #f4f4f4;
       margin: 0;
       padding: 0;
+      color: #222;
     }
 
+    /* NAVIGATION */
+
+    nav {
+      width: 100%;
+      background-color: #222;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 35px;
+
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 18px 30px;
+    }
+
+    .nav-container a {
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+
+      transition: color 0.2s ease;
+    }
+
+    .nav-container a:hover {
+      color: #bbbbbb;
+    }
+
+    /* MAIN PAGE */
+
     .container {
-      width: 80%;
-      max-width: 800px;
-      margin: 80px auto;
+      width: 85%;
+      max-width: 850px;
+
+      margin: 70px auto;
+
       background-color: white;
-      padding: 40px;
+
+      padding: 50px;
+
       border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+      box-shadow:
+        0 4px 18px
+        rgba(0, 0, 0, 0.1);
     }
 
     h1 {
-      font-size: 42px;
+      font-size: 44px;
+      margin-top: 0;
       margin-bottom: 10px;
     }
 
     h2 {
       color: #555;
+      font-size: 24px;
       font-weight: normal;
-      margin-bottom: 30px;
+      margin-top: 0;
+      margin-bottom: 35px;
     }
 
     p {
       font-size: 18px;
-      line-height: 1.6;
+      line-height: 1.7;
       color: #333;
     }
 
     .highlight {
       font-weight: bold;
     }
+
+    .intro {
+      margin-bottom: 25px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 650px) {
+
+      .nav-container {
+        gap: 18px;
+        padding: 16px;
+        overflow-x: auto;
+      }
+
+      .nav-container a {
+        font-size: 15px;
+        white-space: nowrap;
+      }
+
+      .container {
+        width: 90%;
+        padding: 30px;
+        margin: 40px auto;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      h2 {
+        font-size: 21px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
   </style>
-  <script src="nav.js"></script>
 </head>
 
 <body>
 
-  <div class="container">
+  <!--
+    Navigation is automatically added
+    by nav.js
+  -->
+
+  <main class="container">
 
     <h1>Hello, I'm Andrew!</h1>
 
     <h2>Welcome to my website.</h2>
 
-    <p>
-      My name is <span class="highlight">Andrew</span>, and I am a student
-      interested in business, marketing, technology, and learning new things.
+    <p class="intro">
+      My name is
+      <span class="highlight">Andrew</span>,
+      and I am a student interested in business,
+      marketing, technology, and learning new things.
     </p>
 
     <p>
-      I enjoy working on different projects, developing new skills, and
-      challenging myself both academically and personally.
+      I enjoy working on different projects,
+      developing new skills, and challenging myself
+      both academically and personally.
     </p>
 
     <p>
-      Outside of school, I enjoy gaming, sports, and spending time with
-      friends. I'm always interested in improving my skills and exploring
+      Outside of school, I enjoy gaming, sports,
+      and spending time with friends. I'm always
+      interested in improving my skills and exploring
       new opportunities.
     </p>
 
     <p>
-      Thanks for visiting my page!
+      This website is a place where I can share
+      information about myself, my research,
+      teaching-related work, and some of my
+      personal interests.
     </p>
 
-  </div>
+    <p>
+      Thanks for visiting my website!
+    </p>
+
+  </main>
+
+  <footer>
+    © 2026 Andrew
+  </footer>
+
+  <script src="nav.js"></script>
 
 </body>
 </html>
