@@ -1,6 +1,6 @@
-/* =========================
-   GLOBAL STYLES
-========================= */
+/* ================================
+   BASIC SETUP
+================================ */
 
 * {
     box-sizing: border-box;
@@ -14,167 +14,138 @@ body {
     margin: 0;
     padding: 0;
 
-    /* Beige area visible on the left and right */
-    background-color: #e8dfcf;
-
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
+
+    /* Beige background visible on sides */
+    background-color: #e8dfcf;
 }
 
 
-/* =========================
-   WEBSITE CONTAINER
-   80% width = 10% space on
-   each side
-========================= */
+/* ================================
+   MAIN WEBSITE CONTAINER
+   80% width = 10% beige each side
+================================ */
 
 .site-container {
     width: 80%;
+    min-height: 100vh;
+
     margin: 0 auto;
 
-    background-color: #ffffff;
-
-    min-height: 100vh;
+    background-color: white;
 
     border-left: 1px solid #aaa;
     border-right: 1px solid #aaa;
 }
 
 
-/* =========================
-   HEADER
-========================= */
+/* ================================
+   TOP HEADER
+================================ */
 
 .site-header {
-    display: grid;
-    grid-template-columns: 20% 80%;
+    display: flex;
+
+    align-items: center;
+
+    min-height: 90px;
 
     border-bottom: 1px solid #999;
+
+    background-color: white;
 }
 
+
+/* ================================
+   LOGO / NAME
+================================ */
+
 .logo-area {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 25%;
 
-    min-height: 110px;
-
-    border-right: 1px solid #999;
+    padding: 20px 30px;
 
     font-size: 2rem;
     font-weight: bold;
 }
 
-.header-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 20px;
-
-    text-align: center;
-
-    min-height: 70px;
+.logo-area a {
+    color: #222;
+    text-decoration: none;
 }
 
 
-/* =========================
-   NAVIGATION
-========================= */
+/* ================================
+   TOP NAVIGATION
+================================ */
 
 #navigation {
-    width: 100%;
+    width: 75%;
 }
 
 .primary-nav {
     display: flex;
-    justify-content: center;
+
+    justify-content: flex-end;
     align-items: center;
 
+    padding-right: 30px;
+
     gap: 5px;
-
-    background-color: #f6f3ed;
-
-    border-bottom: 1px solid #aaa;
-
-    min-height: 45px;
 }
 
 .primary-nav a {
     display: block;
 
-    padding: 14px 22px;
+    padding: 14px 18px;
 
     color: #222;
+
     text-decoration: none;
 
-    font-size: 0.95rem;
+    font-size: 1rem;
 
-    transition:
-        background-color 0.2s ease,
-        color 0.2s ease;
+    transition: background-color 0.2s ease;
 }
+
+
+/* Mouse hover */
 
 .primary-nav a:hover {
-    background-color: #ddd3c2;
+    background-color: #e8dfcf;
 }
 
+
+/* Current page */
+
 .primary-nav a.active {
-    background-color: #cfc3af;
+    background-color: #d8cbb7;
+
     font-weight: bold;
 }
 
 
-/* =========================
-   OPTIONAL SECOND NAV
-========================= */
-
-.secondary-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    gap: 20px;
-
-    min-height: 32px;
-
-    background-color: #faf8f4;
-
-    border-bottom: 1px solid #aaa;
-}
-
-.secondary-nav a {
-    color: #444;
-    text-decoration: none;
-
-    font-size: 0.85rem;
-}
-
-.secondary-nav a:hover {
-    text-decoration: underline;
-}
-
-
-/* =========================
-   MAIN PAGE GRID
-========================= */
+/* ================================
+   MAIN PAGE LAYOUT
+================================ */
 
 .page-layout {
     display: grid;
 
-    /* left sidebar / main / right sidebar */
+    /* Left / Main / Right */
     grid-template-columns: 20% 55% 25%;
 
     min-height: 650px;
 }
 
 
-/* =========================
+/* ================================
    LEFT SIDEBAR
-========================= */
+================================ */
 
 .left-sidebar {
-    padding: 25px 20px;
+    padding: 30px 20px;
 
     border-right: 1px solid #aaa;
 
@@ -183,7 +154,6 @@ body {
 
 .left-sidebar h3 {
     margin-top: 0;
-    font-size: 1rem;
 }
 
 .left-sidebar ul {
@@ -194,11 +164,12 @@ body {
 }
 
 .left-sidebar li {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .left-sidebar a {
     color: #333;
+
     text-decoration: none;
 }
 
@@ -207,33 +178,39 @@ body {
 }
 
 
-/* =========================
+/* ================================
    MAIN CONTENT
-========================= */
+================================ */
 
 .main-content {
-    padding: 20px 25px;
+    padding: 25px 30px;
 }
 
 .main-content h1 {
     margin-top: 0;
+
+    font-size: 2rem;
+}
+
+.main-content h2 {
+    margin-top: 30px;
 }
 
 .main-content p {
-    line-height: 1.65;
+    line-height: 1.7;
 }
 
 
-/* =========================
+/* ================================
    HERO IMAGE
-========================= */
+================================ */
 
 .hero {
     width: 100%;
 
-    height: 250px;
+    height: 260px;
 
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 
     overflow: hidden;
 
@@ -252,24 +229,16 @@ body {
 }
 
 
-/* =========================
+/* ================================
    RIGHT SIDEBAR
-========================= */
+================================ */
 
 .right-sidebar {
-    padding: 25px 20px;
+    padding: 30px 20px;
 
     border-left: 1px solid #aaa;
 
     background-color: #faf9f6;
-}
-
-
-/* Makes right content stay visible
-   while scrolling */
-.sticky-content {
-    position: sticky;
-    top: 20px;
 }
 
 .right-sidebar h3 {
@@ -281,25 +250,37 @@ body {
 }
 
 .right-sidebar li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 
-/* =========================
+/* Keeps sidebar visible while scrolling */
+
+.sticky-content {
+    position: sticky;
+
+    top: 20px;
+}
+
+
+/* ================================
    SOCIAL LINKS
-========================= */
+================================ */
 
 .social-links {
-    display: flex;
-    gap: 12px;
+    margin-top: 25px;
 
-    margin-top: 20px;
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
 }
 
 .social-links a {
     color: #333;
+
     text-decoration: none;
-    font-weight: bold;
 }
 
 .social-links a:hover {
@@ -307,29 +288,32 @@ body {
 }
 
 
-/* =========================
+/* ================================
    FOOTER
-========================= */
+================================ */
 
 .site-footer {
-    min-height: 75px;
-
-    padding: 20px;
-
-    border-top: 1px solid #999;
+    padding: 25px;
 
     text-align: center;
 
     font-size: 0.85rem;
 
+    border-top: 1px solid #999;
+
     background-color: #f6f3ed;
+}
+
+.site-footer p {
+    margin: 7px 0;
 }
 
 .site-footer a {
     color: #333;
+
     text-decoration: none;
 
-    margin: 0 8px;
+    margin: 0 10px;
 }
 
 .site-footer a:hover {
@@ -337,9 +321,9 @@ body {
 }
 
 
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
+/* ================================
+   TABLET
+================================ */
 
 @media (max-width: 1000px) {
 
@@ -347,8 +331,22 @@ body {
         width: 90%;
     }
 
+    .logo-area {
+        width: 25%;
+    }
+
+    #navigation {
+        width: 75%;
+    }
+
+    .primary-nav a {
+        padding: 12px 10px;
+
+        font-size: 0.9rem;
+    }
+
     .page-layout {
-        grid-template-columns: 22% 78%;
+        grid-template-columns: 25% 75%;
     }
 
     .right-sidebar {
@@ -357,6 +355,10 @@ body {
 }
 
 
+/* ================================
+   MOBILE
+================================ */
+
 @media (max-width: 700px) {
 
     .site-container {
@@ -364,24 +366,27 @@ body {
     }
 
     .site-header {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+
+        align-items: stretch;
     }
 
     .logo-area {
-        border-right: none;
-        border-bottom: 1px solid #aaa;
+        width: 100%;
+
+        text-align: center;
+    }
+
+    #navigation {
+        width: 100%;
     }
 
     .primary-nav {
-        flex-direction: column;
-        gap: 0;
-    }
+        justify-content: center;
 
-    .primary-nav a {
-        width: 100%;
-        text-align: center;
+        flex-wrap: wrap;
 
-        border-bottom: 1px solid #ddd;
+        padding: 0 10px 15px 10px;
     }
 
     .page-layout {
@@ -390,6 +395,7 @@ body {
 
     .left-sidebar {
         border-right: none;
+
         border-bottom: 1px solid #aaa;
     }
 
@@ -397,6 +403,7 @@ body {
         display: block;
 
         border-left: none;
+
         border-top: 1px solid #aaa;
     }
 
