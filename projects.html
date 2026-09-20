@@ -10,7 +10,7 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Research</title>
+    <title>Projects | Your Name</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -23,13 +23,18 @@
 <div class="site-container">
 
 
+    <!-- HEADER -->
+
     <header class="top-header">
 
         <div class="logo">
+
             <a href="index.html">
                 Your Name
             </a>
+
         </div>
+
 
         <div id="navigation"></div>
 
@@ -37,39 +42,131 @@
 
 
 
+    <!-- MAIN CONTENT -->
+
     <main class="main-content">
 
-        <h1>Research</h1>
+
+        <h1>My Projects</h1>
 
 
         <p>
-            This page highlights research topics
-            and projects that interest me.
+            This page highlights some of the projects I have
+            completed. These projects have helped me develop
+            skills in design, marketing, communication, and
+            creating content for different audiences.
         </p>
 
 
-        <h2>Current Research</h2>
 
-        <p>
-            Add your research information here.
-        </p>
+        <!-- =========================
+             PROJECT 1
+        ========================== -->
+
+        <section class="project-card">
 
 
-        <h2>Research Interests</h2>
+            <h2>Project 1</h2>
 
-        <p>
-            Add your research interests here.
-        </p>
+
+            <img
+                class="project-image"
+                src="images/project1.jpg"
+                alt="Project 1"
+            >
+
+
+            <p>
+                Add a short description of your first Canva
+                project here. Explain what the project was,
+                what its purpose was, and what you created.
+            </p>
+
+
+            <h3>What I Learned</h3>
+
+
+            <p>
+                Add a few sentences about the skills you used
+                or learned while completing this project.
+            </p>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             PROJECT 2
+        ========================== -->
+
+        <section class="project-card">
+
+
+            <h2>Project 2</h2>
+
+
+            <img
+                class="project-image"
+                src="images/project2.jpg"
+                alt="Project 2"
+            >
+
+
+            <p>
+                Add a short description of your second Canva
+                project here. Explain the goal of the project
+                and some of the design decisions you made.
+            </p>
+
+
+            <h3>What I Learned</h3>
+
+
+            <p>
+                Add a few sentences about what you learned
+                while completing this project and how it
+                improved your design or marketing skills.
+            </p>
+
+
+        </section>
+
 
     </main>
 
 
 
+    <!-- FOOTER -->
+
     <footer class="site-footer">
 
-        <p>
-            © 2026 Your Name
-        </p>
+
+        <span>
+            © <span id="year"></span> Your Name
+        </span>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="projects.html">
+                Projects
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
 
     </footer>
 
@@ -77,7 +174,16 @@
 </div>
 
 
+
 <script src="nav.js"></script>
+
+
+<script>
+
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+</script>
 
 
 </body>
