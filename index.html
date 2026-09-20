@@ -10,7 +10,7 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Home</title>
+    <title>Home | Your Name</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -20,60 +20,352 @@
 <body>
 
 
-<div class="site-container">
+<div class="home-container">
 
 
-    <header class="top-header">
+    <!-- ==================================
+         HEADER
+    =================================== -->
 
-        <div class="logo">
+    <header class="home-header">
+
+
+        <!-- LOGO / NAME -->
+
+        <div class="home-logo">
+
             <a href="index.html">
                 Your Name
             </a>
+
         </div>
 
 
-        <div id="navigation"></div>
+
+        <!-- TOP RIGHT AREA -->
+
+        <div class="home-header-right">
+
+
+            <!-- Short website description -->
+
+            <div class="home-description">
+
+                Welcome to my personal website.
+                Learn more about my background,
+                interests, research, and projects.
+
+            </div>
+
+
+
+            <!-- Navigation is created by nav.js -->
+
+            <div id="navigation"></div>
+
+
+        </div>
+
 
     </header>
 
 
 
-    <main class="main-content">
+    <!-- ==================================
+         MAIN 3-COLUMN AREA
+    =================================== -->
 
-        <h1>Welcome</h1>
-
-
-        <p>
-            Welcome to my personal website.
-            This website contains information about me,
-            my interests, research, and ways to contact me.
-        </p>
+    <div class="home-grid">
 
 
-        <h2>About This Website</h2>
+        <!-- ==================================
+             LEFT NAVIGATION
+        =================================== -->
+
+        <aside class="home-left-sidebar">
 
 
-        <p>
-            I created this website using HTML, CSS,
-            and JavaScript. Use the navigation menu above
-            to explore the different pages.
-        </p>
-
-    </main>
+            <h3>Navigation</h3>
 
 
+            <ul>
 
-    <footer class="site-footer">
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
 
-        <p>
+                <li>
+                    <a href="about.html">
+                        About Me
+                    </a>
+                </li>
+
+                <li>
+                    <a href="research.html">
+                        Research
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+
+            <h3 class="sidebar-second-title">
+                Quick Links
+            </h3>
+
+
+            <ul>
+
+                <li>
+                    <a href="about.html">
+                        My Background
+                    </a>
+                </li>
+
+                <li>
+                    <a href="research.html">
+                        My Research
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Get in Touch
+                    </a>
+                </li>
+
+            </ul>
+
+
+        </aside>
+
+
+
+        <!-- ==================================
+             CENTER CONTENT
+        =================================== -->
+
+        <main class="home-main">
+
+
+            <!-- HERO IMAGE -->
+
+            <div class="home-hero">
+
+                <img
+                    src="images/hero.jpg"
+                    alt="Homepage hero image"
+                >
+
+            </div>
+
+
+
+            <h1>Welcome</h1>
+
+
+            <p>
+                Welcome to my personal website. I created this
+                website as a place to share information about
+                myself, my academic interests, current projects,
+                and other areas that are important to me. This
+                site was developed using HTML, CSS, and
+                JavaScript while applying principles of web
+                design and user experience.
+            </p>
+
+
+            <p>
+                The goal of this website is to make information
+                easy to find and understand. The navigation
+                system allows visitors to move between the
+                different pages of the website while maintaining
+                a consistent layout. The design uses clear
+                headings, readable text, contrasting colors,
+                and organized sections to create a simple and
+                effective user experience.
+            </p>
+
+
+
+            <h2>About This Website</h2>
+
+
+            <p>
+                The About Me page contains additional information
+                about my background, education, interests, and
+                goals. The Research page provides information
+                about topics and projects that I am interested
+                in exploring. The Contact page gives visitors a
+                way to provide feedback or communicate with me
+                through an embedded form.
+            </p>
+
+
+            <p>
+                I designed the website so that it can be viewed
+                on both desktop and mobile devices. Responsive
+                CSS allows the content to adjust when the screen
+                becomes smaller. Navigation links also include
+                hover effects so visitors receive visual
+                feedback when interacting with different parts
+                of the site.
+            </p>
+
+
+
+            <h2>Explore</h2>
+
+
+            <p>
+                Use the navigation areas on this page to explore
+                the rest of the website. As I continue working
+                on the site, I can add new information, images,
+                projects, and other content without changing the
+                overall structure. This gives the website a
+                consistent appearance while still allowing each
+                page to contain its own unique information.
+            </p>
+
+
+        </main>
+
+
+
+        <!-- ==================================
+             RIGHT / STICKY SIDEBAR
+        =================================== -->
+
+        <aside class="home-right-sidebar">
+
+
+            <div class="home-sticky">
+
+
+                <h3>Updates</h3>
+
+
+                <ul>
+
+                    <li>
+                        Website recently updated
+                    </li>
+
+                    <li>
+                        New research information
+                    </li>
+
+                    <li>
+                        Current projects
+                    </li>
+
+                    <li>
+                        Site announcements
+                    </li>
+
+                </ul>
+
+
+
+                <h3>Site Information</h3>
+
+
+                <ul>
+
+                    <li>
+                        About Me
+                    </li>
+
+                    <li>
+                        Research
+                    </li>
+
+                    <li>
+                        Contact
+                    </li>
+
+                </ul>
+
+
+
+                <h3>Connect</h3>
+
+
+                <div class="home-social">
+
+                    <a href="#">
+                        GitHub
+                    </a>
+
+                    <a href="#">
+                        LinkedIn
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+        </aside>
+
+
+    </div>
+
+
+
+    <!-- ==================================
+         FOOTER
+    =================================== -->
+
+    <footer class="home-footer">
+
+
+        <div>
+
             © 2026 Your Name
-        </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="research.html">
+                Research
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
 
     </footer>
 
 
 </div>
 
+
+
+<!-- Shared navigation -->
 
 <script src="nav.js"></script>
 
