@@ -516,3 +516,34 @@ body {
     }
 
 }
+/* ==========================================
+   PROJECT PAGE
+========================================== */
+
+.project-card {
+    margin-top: 40px;
+
+    padding: 25px;
+
+    background-color: #faf9f6;
+
+    border: 1px solid #ccc;
+}
+
+
+.project-card h2 {
+    margin-top: 0;
+}
+
+
+.project-image {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    margin: 20px 0;
+
+    border: 1px solid #aaa;
+}
