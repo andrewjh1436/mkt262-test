@@ -1,78 +1,48 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const navigation =
-        document.getElementById("navigation");
+    const navigation = document.getElementById("navigation");
 
+    if (!navigation) {
+        return;
+    }
 
     navigation.innerHTML = `
-
         <nav class="primary-nav">
 
-            <a href="index.html">
-                Home
-            </a>
+            <a href="index.html">Home</a>
 
-            <a href="about.html">
-                About Me
-            </a>
+            <a href="about.html">About Me</a>
 
-            <a href="research.html">
-                Research
-            </a>
+            <a href="research.html">Research</a>
 
-            <a href="teaching.html">
-                Teaching
-            </a>
-
-            <a href="personal.html">
-                Personal
-            </a>
+            <a href="contact.html">Contact</a>
 
         </nav>
-
     `;
 
 
-    /* Find current page */
-
+    // Get the name of the current page
     let currentPage =
-        window.location.pathname
-        .split("/")
-        .pop();
+        window.location.pathname.split("/").pop();
 
 
-    if (
-        currentPage === "" ||
-        currentPage === "/"
-    ) {
-
-        currentPage =
-            "index.html";
-
+    // If GitHub Pages loads the home page without
+    // showing index.html in the URL
+    if (currentPage === "") {
+        currentPage = "index.html";
     }
 
 
-    /* Highlight current page */
-
+    // Highlight the current navigation link
     const links =
-        document.querySelectorAll(
-            ".primary-nav a"
-        );
+        document.querySelectorAll(".primary-nav a");
 
 
     links.forEach(function (link) {
 
-        const linkPage =
-            link.getAttribute("href");
+        if (link.getAttribute("href") === currentPage) {
 
-
-        if (
-            linkPage === currentPage
-        ) {
-
-            link.classList.add(
-                "active"
-            );
+            link.classList.add("active");
 
         }
 
