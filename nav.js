@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <nav class="primary-nav">
             <a href="index.html">Home</a>
             <a href="about.html">About Me</a>
-            <a href="research.html">Research</a>
+            <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
         </nav>
     `;
