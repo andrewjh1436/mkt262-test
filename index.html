@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Your Name</title>
 
@@ -17,22 +20,55 @@
 <div class="site-container">
 
 
-    <!-- TOP HEADER -->
+    <!-- =========================
+         HEADER
+    ========================== -->
 
     <header class="top-header">
 
+
+        <!-- LOGO -->
+
         <div class="logo">
-            <a href="index.html">Your Name</a>
+
+            <a href="index.html">
+                Your Name
+            </a>
+
         </div>
 
-        <!-- Navigation will be inserted here by nav.js -->
-        <div id="navigation"></div>
+
+        <!-- RIGHT SIDE OF HEADER -->
+
+        <div class="header-right">
+
+
+            <!-- WEBSITE DESCRIPTION -->
+
+            <div class="header-description">
+
+                Welcome to my website. Learn more about
+                my background, research interests, and
+                ways to contact me.
+
+            </div>
+
+
+            <!-- NAVIGATION FROM nav.js -->
+
+            <div id="navigation"></div>
+
+
+        </div>
+
 
     </header>
 
 
 
-    <!-- MAIN PAGE -->
+    <!-- =========================
+         MAIN 3-COLUMN AREA
+    ========================== -->
 
     <div class="page-layout">
 
@@ -41,21 +77,79 @@
 
         <aside class="left-sidebar">
 
-            <h3>Quick Links</h3>
+
+            <h3>Primary Navigation</h3>
+
 
             <ul>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="contact.html">Contact</a></li>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About Me
+                    </a>
+                </li>
+
+                <li>
+                    <a href="research.html">
+                        Research
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
             </ul>
+
+
+            <h3 class="secondary-title">
+                Quick Links
+            </h3>
+
+
+            <ul>
+
+                <li>
+                    <a href="about.html">
+                        My Background
+                    </a>
+                </li>
+
+                <li>
+                    <a href="research.html">
+                        My Research
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Get in Touch
+                    </a>
+                </li>
+
+            </ul>
+
 
         </aside>
 
 
 
-        <!-- MAIN CONTENT -->
+        <!-- =========================
+             CENTER CONTENT
+        ========================== -->
 
         <main class="main-content">
+
+
+            <!-- HERO IMAGE -->
 
             <div class="hero">
 
@@ -67,62 +161,112 @@
             </div>
 
 
+
             <h1>Welcome</h1>
 
+
             <p>
-                Welcome to my website. This is the main content area
-                where I can share information about myself, my education,
-                research, projects, and other interests.
+                Welcome to my website. This is the main content
+                area where I can share information about myself,
+                my education, research interests, projects, and
+                other topics that are important to me.
             </p>
 
 
             <p>
-                This website was created using HTML, CSS, and JavaScript.
-                Use the navigation menu above or the quick links on the
-                left to explore the different sections of the website.
+                This website was created using HTML, CSS, and
+                JavaScript. The navigation system allows visitors
+                to move easily between different sections of the
+                website while maintaining a consistent design.
             </p>
+
 
 
             <h2>About This Website</h2>
 
+
             <p>
-                This website contains information about my background,
-                research interests, and other topics I would like to share.
-                You can also use the contact page to send feedback or
-                get in touch with me.
+                The About Me page provides information about my
+                background and interests. The Research page
+                contains information about topics that interest
+                me, while the Contact page gives visitors a way
+                to communicate with me and provide feedback.
             </p>
+
+
+            <p>
+                The website was designed with readability and
+                usability in mind. Clear headings, organized
+                sections, contrasting colors, and responsive
+                design help make the website easy to navigate
+                on different screen sizes.
+            </p>
+
 
         </main>
 
 
 
-        <!-- RIGHT SIDEBAR -->
+        <!-- =========================
+             RIGHT SIDEBAR
+        ========================== -->
 
         <aside class="right-sidebar">
 
+
             <div class="sticky-content">
+
 
                 <h3>Updates</h3>
 
+
                 <ul>
+
                     <li>Recent news</li>
+
                     <li>Current projects</li>
+
                     <li>Announcements</li>
+
                     <li>Interesting links</li>
+
                 </ul>
+
+
+
+                <h3>Site Information</h3>
+
+
+                <ul>
+
+                    <li>About Me</li>
+
+                    <li>Research</li>
+
+                    <li>Contact</li>
+
+                </ul>
+
 
 
                 <h3>Connect</h3>
 
+
                 <div class="social-links">
 
-                    <a href="#">GitHub</a>
+                    <a href="#">
+                        GitHub
+                    </a>
 
-                    <a href="#">LinkedIn</a>
+                    <a href="#">
+                        LinkedIn
+                    </a>
 
                 </div>
 
+
             </div>
+
 
         </aside>
 
@@ -131,11 +275,38 @@
 
 
 
-    <!-- FOOTER -->
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
     <footer class="site-footer">
 
-        © <span id="year"></span> Your Name
+
+        <span>
+            © <span id="year"></span> Your Name
+        </span>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="research.html">
+                Research
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
 
     </footer>
 
@@ -144,12 +315,10 @@
 
 
 
-<!-- SHARED NAVIGATION -->
+<!-- KEEP USING YOUR EXISTING nav.js -->
 
 <script src="nav.js"></script>
 
-
-<!-- AUTOMATIC YEAR -->
 
 <script>
 
