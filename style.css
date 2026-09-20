@@ -1,0 +1,183 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #e8dfcf;
+
+    color: #222;
+}
+
+
+/* =========================
+   WEBSITE CONTAINER
+========================= */
+
+.site-container {
+    width: 80%;
+
+    margin: 0 auto;
+
+    min-height: 100vh;
+
+    background-color: white;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.top-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 25px 40px;
+
+    border-bottom: 1px solid #bbb;
+}
+
+
+/* =========================
+   NAME / LOGO
+========================= */
+
+.logo a {
+    font-size: 2rem;
+
+    font-weight: bold;
+
+    color: #222;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.primary-nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.primary-nav a {
+    padding: 12px 16px;
+
+    color: #222;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    transition: background-color 0.2s;
+}
+
+
+.primary-nav a:hover {
+    background-color: #e8dfcf;
+}
+
+
+.primary-nav a.active {
+    background-color: #d8c9b0;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-content {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 50px 40px;
+
+    min-height: 650px;
+}
+
+
+.main-content h1 {
+    font-size: 2.3rem;
+
+    margin-top: 0;
+}
+
+
+.main-content h2 {
+    margin-top: 35px;
+}
+
+
+.main-content p {
+    font-size: 1rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+    padding: 25px;
+
+    text-align: center;
+
+    border-top: 1px solid #bbb;
+
+    background-color: #f6f3ed;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .site-container {
+        width: 100%;
+    }
+
+
+    .top-header {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .primary-nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .main-content {
+        padding: 35px 20px;
+    }
+
+}
