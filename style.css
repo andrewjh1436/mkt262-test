@@ -547,3 +547,301 @@ body {
 
     border: 1px solid #aaa;
 }
+/* ==========================================================
+   PASS 1 - ANDREW HAUGEN COLOR PALETTE
+   Paste at the VERY BOTTOM of style.css
+========================================================== */
+
+:root {
+    --charcoal: #2C3531;
+    --teal: #116466;
+    --tan: #D9B08C;
+    --peach: #FFCB9A;
+    --mint: #D1E8E2;
+    --white: #FFFFFF;
+    --soft-white: #FAF9F6;
+}
+
+
+/* ==========================================================
+   PAGE BACKGROUND
+========================================================== */
+
+body {
+    background-color: var(--mint);
+    color: var(--charcoal);
+}
+
+
+/* Main website area */
+
+.site-container {
+    background-color: var(--white);
+
+    border-left-color: rgba(44, 53, 49, 0.35);
+    border-right-color: rgba(44, 53, 49, 0.35);
+}
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.top-header {
+    background-color: var(--charcoal);
+
+    color: var(--white);
+
+    border-top-color: var(--teal);
+    border-bottom: 4px solid var(--teal);
+}
+
+
+/* Logo / Name */
+
+.logo {
+    border-right-color: rgba(209, 232, 226, 0.35);
+}
+
+
+.logo a {
+    color: var(--white);
+
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+}
+
+
+.logo a:hover {
+    color: var(--peach);
+}
+
+
+/* ==========================================================
+   HEADER DESCRIPTION
+========================================================== */
+
+.header-description {
+    color: var(--white);
+
+    border-bottom-color: rgba(209, 232, 226, 0.25);
+
+    font-weight: 400;
+}
+
+
+/* ==========================================================
+   TOP NAVIGATION
+========================================================== */
+
+.primary-nav a {
+    color: var(--white);
+
+    border-radius: 0;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+/* Hover */
+
+.primary-nav a:hover {
+    background-color: var(--teal);
+
+    color: var(--white);
+}
+
+
+/* Current page */
+
+.primary-nav a.active {
+    background-color: var(--peach);
+
+    color: var(--charcoal);
+
+    font-weight: bold;
+}
+
+
+/* ==========================================================
+   LEFT SIDEBAR
+========================================================== */
+
+.left-sidebar {
+    background-color: var(--mint);
+
+    color: var(--charcoal);
+
+    border-right-color: rgba(44, 53, 49, 0.25);
+}
+
+
+.left-sidebar h3 {
+    color: var(--teal);
+}
+
+
+.left-sidebar a {
+    color: var(--charcoal);
+
+    font-weight: 500;
+}
+
+
+.left-sidebar a:hover {
+    color: var(--teal);
+
+    text-decoration: none;
+}
+
+
+/* ==========================================================
+   MAIN CONTENT
+========================================================== */
+
+.main-content {
+    background-color: var(--white);
+
+    color: var(--charcoal);
+}
+
+
+.main-content h1,
+.main-content h2,
+.main-content h3 {
+    color: var(--charcoal);
+}
+
+
+.main-content h1 {
+    letter-spacing: -1px;
+}
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero {
+    border-color: rgba(44, 53, 49, 0.35);
+
+    background-color: var(--charcoal);
+}
+
+
+/* ==========================================================
+   RIGHT SIDEBAR
+========================================================== */
+
+.right-sidebar {
+    background-color: var(--mint);
+
+    color: var(--charcoal);
+
+    border-left-color: rgba(44, 53, 49, 0.25);
+}
+
+
+.right-sidebar h3 {
+    color: var(--charcoal);
+}
+
+
+/* ==========================================================
+   PROJECT CARDS
+========================================================== */
+
+.project-card {
+    background-color: var(--soft-white);
+
+    border: 1px solid rgba(44, 53, 49, 0.15);
+
+    border-top: 4px solid var(--teal);
+}
+
+
+.project-card h2 {
+    color: var(--charcoal);
+}
+
+
+/* ==========================================================
+   SOCIAL LINKS
+========================================================== */
+
+.social-links a {
+    color: var(--teal);
+
+    font-weight: 600;
+}
+
+
+.social-links a:hover {
+    color: var(--charcoal);
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.site-footer {
+    background-color: var(--charcoal);
+
+    color: var(--white);
+
+    border-top: 4px solid var(--teal);
+    border-bottom-color: var(--charcoal);
+}
+
+
+.footer-links a {
+    color: var(--mint);
+}
+
+
+.footer-links a:hover {
+    color: var(--peach);
+
+    text-decoration: none;
+}
+
+
+/* ==========================================================
+   GENERAL LINKS
+========================================================== */
+
+.main-content a {
+    color: var(--teal);
+}
+
+
+.main-content a:hover {
+    color: var(--charcoal);
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 700px) {
+
+    .logo {
+        border-bottom-color: rgba(209, 232, 226, 0.3);
+    }
+
+
+    .left-sidebar {
+        border-bottom-color: rgba(44, 53, 49, 0.25);
+    }
+
+
+    .right-sidebar {
+        border-top-color: rgba(44, 53, 49, 0.25);
+    }
+
+}
