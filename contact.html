@@ -10,7 +10,7 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Contact</title>
+    <title>Contact | Andrew Haugen</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -23,13 +23,18 @@
 <div class="site-container">
 
 
+    <!-- HEADER -->
+
     <header class="top-header">
 
         <div class="logo">
+
             <a href="index.html">
-                Your Name
+                Andrew Haugen
             </a>
+
         </div>
+
 
         <div id="navigation"></div>
 
@@ -37,33 +42,72 @@
 
 
 
+    <!-- MAIN CONTENT -->
+
     <main class="main-content">
 
-        <h1>Contact</h1>
+
+        <h1>Contact Me</h1>
 
 
         <p>
-            Use this page to contact me or provide
-            feedback about my website.
+            Have a question or want to get in touch?
+            Fill out the form below and send me a message.
         </p>
 
 
-        <h2>Contact Form</h2>
 
+        <!-- GOOGLE FORM -->
 
-        <p>
-            My contact form will be placed here.
-        </p>
+        <div class="google-form-container">
+
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfMN5zFgLsVtHt7DVMZBwI5gdsr8o9n6laYhy9tc3DnglPIVQ/viewform?embedded=true"
+                width="640"
+                height="643"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0">
+                Loading…
+            </iframe>
+
+        </div>
+
 
     </main>
 
 
 
+    <!-- FOOTER -->
+
     <footer class="site-footer">
 
-        <p>
-            © 2026 Your Name
-        </p>
+
+        <span>
+            © <span id="year"></span> Andrew Haugen
+        </span>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="projects.html">
+                Projects
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
 
     </footer>
 
@@ -71,7 +115,16 @@
 </div>
 
 
+
 <script src="nav.js"></script>
+
+
+<script>
+
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+</script>
 
 
 </body>
