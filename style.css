@@ -990,3 +990,8 @@ body {
     }
 
 }
+/* Outer background on left and right sides */
+
+body {
+    background-color: #22302D;
+}
